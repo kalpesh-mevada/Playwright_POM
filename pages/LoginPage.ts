@@ -23,7 +23,7 @@ export class LoginPage {
         await this.password.fill(pass)
         await this.loginButton.click()
     }
-    //Assertion to verify login success
+    //Assertion to verify login success`(it should not be in object and action class)
     // async verifyLoginSuccess(){
     //     await expect(this.page).toHaveURL('https://www.saucedemo.com/inventory.html');
     // }

@@ -4,7 +4,7 @@
         "password": "secret_sauce"
     },
     "invlid_user": {
-        "username": "invalid_user",
-        "password": "invalid_password"
+        "username": "standard_user_invalid",
+        "password": "secret_sauce_invalid"
     }
 }
