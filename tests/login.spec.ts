@@ -15,6 +15,7 @@ test('Valid login test', async ({page}) =>{ // page is fixture provided by playw
 
    // await loginPage.verifyLoginSuccess(); //calling the method to verify login success
    await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html'); //Assertion to verify login success
+   await page.pause(); //pause the test execution to see the error message
 });
 
 test('Invalid login test', async ({page}) =>{ // page is fixture provided by playwright test runner or global variable
@@ -30,4 +31,5 @@ test('Invalid login test', async ({page}) =>{ // page is fixture provided by pla
 
    // await loginPage.verifyLoginSuccess(); //calling the method to verify login success
    await expect(loginPage.errorMessage).toBeVisible(); //Assertion to verify error message is visible
+   await page.pause(); //pause the test execution to see the error message
 });
